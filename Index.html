@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/0e22389e8c.js" crossorigin="anonymous"></script>
+    <script src="Script.js" defer></script>
+    <title>Formulaire</title>
+</head>
+<body>
+    <h2>Formulaire d'inscription au club Solicode</h2>
+    <main>
+        <div class="container">
+            <h1>Remplir le formulaire:</h1>
+            <form id="form" class="form" action="redirection.html">
+                <div class="form-control">
+                    <p><b>Nom</b></p>
+                    <input type="text" placeholder="Nom" id="firstname" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                    <samp></samp>
+                </div>
+                <div class="form-control">
+                    <p><b>Prénom</b></p>
+                    <input type="text" placeholder="Prénom" id="lastname" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                    <samp></samp>
+                </div>
+                <div class="form-control">
+                    <p><b>Email</b></p>
+                    <input type="text" placeholder="Nom.Prénom@ofppt.ma" id="email" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                    <samp></samp>
+                </div>
+                <div class="form-control">
+                    <p><b>Téléphone</b></p>
+                    <input type="text" placeholder="Numéro de Téléphone" id="phonenumber" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                    <samp></samp>
+                </div>
+                <div class="form-control">
+                    <p><b>Genre:</b></p>
+                    <div class="Genre">
+                    <div class="F">
+                        <label for="Féminin">Féminin</label>
+                       <input type="radio" id="F" name="M" value="F">
+                        </div>
+                    <div class="M">
+                        <label for="Masculin">Masculin</label>
+                        <input type="radio" id="M" name="M" value="M">
+                    </div>
+                    <div class="mis1"></div>
+                </div>
+                <div class="form-control">
+                    <p><b>Groupe:</b></p>
+                    <div class="groupe">
+                      <select name="pets" id="pet-select">
+                        <option value="">Choisir un groupe</option>
+                        <option value="DW101">DW101</option>
+                        <option value="DW102">DW102</option>
+                        <option value="DW103">DW103</option>
+                        <option value="DM101">DM101</option>
+                        <option value="DM102">DM102</option>
+                      </div>
+                   </select>
+                   <div class="mis2"></div>
+                </div>
+                <div class="form-control">
+                    <p><b>Clubs:</b></p>
+                    <div class="Groupe">
+                      <select name="grp" id="club-select" multiple style="width: 80%;">
+                        <option value="Football">Football</option>
+                        <option value="Théatre">Théatre</option>
+                        <option value="Jeu d'échec">Jeu d'échec</option>
+                        <option value="Music">Music</option>
+                        <option value="Informatique">Informatique</option>
+                        <option value="Robotique">Robotique</option>
+                      </div>
+                   </select>
+                    <div class="mis3"></div>
+                </div>
+                <button class="btn">S'inscrire</button>
+            </form> 
+        </div>
+    </main>
+</body>
+
+</html>
