@@ -34,14 +34,14 @@ function validatefname (fname){
 		setSuccessFor(lname, 'Valide!');
 	}
 }
-	function validateemail (e){
-		if (e.value.trim() === '') {
-			setErrorFor(e, 'Email  is required');
-		}else if(e.value.match(/^\w+([\.-]?\w+)*@*(ofppt)*(\.ma)+$/g)){
-			setSuccessFor(e, 'Valide!');
+	function validateemail (ema){
+		if (ema.value.trim() === '') {
+			setErrorFor(ema, 'Email  is required');
+		}else if(ema.value.match(/^\w+([\.-]?\w+)*@*(ofppt)*(\.ma)+$/g)){
+			setSuccessFor(ema, 'Valide!');
 		}
 		 else{
-			setErrorFor(e, 'Email non valide');
+			setErrorFor(ema, 'Email non valide');
 			
 		}
 	}
@@ -140,6 +140,7 @@ function checkInputs() {
 		mis3.innerHTML = "";
 		arr.push(true)
 	}
+}
 function setErrorFor(input, message) {
 	const formControl = input.parentElement;
 	const small = formControl.querySelector('small');
@@ -159,5 +160,4 @@ function isEmail(email) {
 function isPhonenumber(phonenumber) {
 	var phoneRe = /^((\+212)?[ -])?(06|05|07)(\d{1})[ -]?(\d{3})[ -]?(\d{4})+$/;
 	return phoneRe.test(phonenumber);
-}
 }
